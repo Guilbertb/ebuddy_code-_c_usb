@@ -1,0 +1,8 @@
+sudo apt install libusb-dev 
+
+un fichier  /etc/udev/rules.d/10-local.rules 
+SUBSYSTEMS=="usb", ATTRS{product}=="xHCI Host Controller", GROUP="work"
+
+placer dans le groupe work ici
+ca peut etre le groupe ibuddy
+
